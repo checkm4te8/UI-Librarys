@@ -11,6 +11,7 @@ local CloseBind = Enum.KeyCode.RightControl
 
 local FluxLib = Instance.new("ScreenGui")
 FluxLib.Name = "T3PHUB"
+syn.protect_gui(FluxLib)
 FluxLib.Parent = game.CoreGui
 FluxLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
