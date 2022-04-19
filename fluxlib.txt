@@ -1937,19 +1937,6 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			ColorSelection.ScaleType = Enum.ScaleType.Fit
 			ColorSelection.Visible = false
 
-			Toggle.Name = "Toggle"
-			Toggle.Parent = Title
-			Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			Toggle.BackgroundTransparency = 1.000
-			Toggle.Position = UDim2.new(2.37430048, 0, 1.07157099, 0)
-			Toggle.Size = UDim2.new(0, 137, 0, 38)
-			Toggle.Font = Enum.Font.Gotham
-			Toggle.Text = "Rainbow"
-			Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
-			Toggle.TextSize = 15.000
-			Toggle.TextTransparency = 0.300
-			Toggle.TextXAlignment = Enum.TextXAlignment.Left
-
 			ToggleFrame.Name = "ToggleFrame"
 			ToggleFrame.Parent = Toggle
 			ToggleFrame.BackgroundColor3 = Color3.fromRGB(226, 227, 227)
