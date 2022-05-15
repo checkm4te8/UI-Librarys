@@ -526,12 +526,13 @@ library.Subs = library.subs
 local library_flags = library.flags
 local destroyrainbows, destroyrainbowsg = nil
 function darkenColor(clr, intensity)
-	if not intensity or intensity == 1 then
-		return clr
-	end
-	if clr and (typeof(clr) == "Color3" or type(clr) == "table") then
-		return Color3.new(clr.R / intensity, clr.G / intensity, clr.B / intensity)
-	end
+    return clr
+	-- if not intensity or intensity == 1 then
+	-- 	return clr
+	-- end
+	-- if clr and (typeof(clr) == "Color3" or type(clr) == "table") then
+	-- 	return Color3.new(clr.R / intensity, clr.G / intensity, clr.B / intensity)
+	-- end
 end
 library.subs.darkenColor = darkenColor
 local __runscript = true
