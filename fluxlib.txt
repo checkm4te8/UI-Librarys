@@ -2082,8 +2082,6 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			local function UpdateColorPicker(nope)
 				BoxColor.BackgroundColor3 = Color3.fromHSV(ColorH, ColorS, ColorV)
 				Color.BackgroundColor3 = Color3.fromHSV(ColorH, 1, 1)
-
-				pcall(callback, BoxColor.BackgroundColor3)
 			end
 
 			ColorH =
@@ -2100,7 +2098,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 
 			BoxColor.BackgroundColor3 = preset
 			Color.BackgroundColor3 = preset
-			pcall(callback, BoxColor.BackgroundColor3)
+			
 
 			Color.InputBegan:Connect(
 				function(input)
@@ -2265,6 +2263,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 				end
 			)
 			Container.CanvasSize = UDim2.new(0, 0, 0, ContainerLayout.AbsoluteContentSize.Y)
+			pcall(callback, BoxColor.BackgroundColor3)
 		end
 		function ContainerContent:Line()
 			local Line = Instance.new("TextButton")
