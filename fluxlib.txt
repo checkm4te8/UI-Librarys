@@ -2212,7 +2212,6 @@ function Flux:Window(text, bottom,mainclr,toclose)
 							ColorSelection.Position = UDim2.new(1, 0, 0, 0)
 							HueSelection.Position = UDim2.new(0.48, 0, 0, Flux.HueSelectionPosition)
 
-							pcall(callback, BoxColor.BackgroundColor3)
 							wait()
 						end
 					elseif not RainbowColorPicker then
@@ -2229,7 +2228,6 @@ function Flux:Window(text, bottom,mainclr,toclose)
 						ColorSelection.Position = OldColorSelectionPosition
 						HueSelection.Position = OldHueSelectionPosition
 
-						pcall(callback, BoxColor.BackgroundColor3)
 					end
 				end
 			)
