@@ -1,6 +1,10 @@
 local Nofitication = {}
-
+print("got init")
 local GUI = shared.STX_Notification
+for i,v in pairs(GUI:GetChildren()) do
+    print(i)
+    print(v)
+    end
 function Nofitication:Notify(nofdebug, middledebug, all)
     local SelectedType = string.lower(tostring(middledebug.Type))
     local ambientShadow = Instance.new("ImageLabel")
