@@ -1,6 +1,6 @@
 local Nofitication = {}
 print("got init")
-local GUI = shared.STX_Notification
+local GUI = shared.STX_Nofitication
 for i,v in pairs(GUI:GetChildren()) do
     print(i)
     print(v)
