@@ -1,8 +1,9 @@
-local WhereToPut;
+if not shared.WhereToPut then
+shared.WhereToPut = nil;
 if gethui and type(gethui) == "function" then
-  WhereToPut = gethui()
+  shared.WhereToPut = gethui()
   else
-  WhereToPut = game.CoreGui
+  shared.WhereToPut = game.CoreGui
 end
 
 if not game:GetService("CoreGui"):FindFirstChild("STX_Nofitication") then
@@ -19,4 +20,4 @@ if not game:GetService("CoreGui"):FindFirstChild("STX_Nofitication") then
     shared.STX_NofiticationUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     shared.STX_NofiticationUIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
 end
-
+end
