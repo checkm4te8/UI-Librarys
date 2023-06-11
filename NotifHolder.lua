@@ -18,5 +18,4 @@ if not game:GetService("CoreGui"):FindFirstChild("STX_Nofitication") then
     STX_NofiticationUIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
     STX_NofiticationUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     STX_NofiticationUIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
-else
 end
